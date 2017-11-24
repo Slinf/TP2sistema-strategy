@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="fr.clement.tp1.tp_2database_sqlite.RegisterUsersActivity">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER UTILISATEUR"
+            android:textColor="@color/colorPrimary"
+            android:layout_margin="10dp"
+            android:textSize="15dp"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Id"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prénom"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Télephone"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:text="Valider"
+            android:id="@+id/validateuser"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFF"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+

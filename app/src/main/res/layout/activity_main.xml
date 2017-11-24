@@ -1,18 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:orientation="vertical"
+tools:context="fr.clement.tp1.tp_2database_sqlite.MainActivity">
+<ImageView
+    android:id="@+id/imageView2"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="fr.clement.tp1.tp_2database_sqlite.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srcCompat="@mipmap/ic_launcher_round" />
+<Button
+    android:layout_marginTop="20dp"
+    android:id="@+id/btnRegister"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Créer Utilisateur"
+    android:textColor="@color/colorPrimary" />
+    <Button
+        android:id="@+id/btnRegisterAnimaux"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="REGISTER ANIMAUX"
+        android:textColor="@color/colorPrimary" />
+    <Button
+        android:id="@+id/btnChercherUtilisateurSeul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHERCHER UTILISATEUR individuel"
+        android:textColor="@color/colorPrimary" />
+    <Button
+        android:id="@+id/btnChercheSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="chercher list utilisateur spinner"
+        android:textColor="@color/colorPrimary" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btnChercheListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cherche list utilisateur avec listview"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnChercherListAnimaix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cherche List Animaux"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnListUtilisateurRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View list avec recycle"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>
